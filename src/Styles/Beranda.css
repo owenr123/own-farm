@@ -1,0 +1,584 @@
+/* BerandaSebelum.css */
+
+.beranda {
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.google-play-btn {
+  width: auto;
+  height: 40px;
+}
+
+/* Section Tentang */
+.tentang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: white;
+  color: #085B45;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.tentang-header {
+  margin-left: -24px;
+}
+
+.tentang-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.tentang-header .tentang-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.tentang-content {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.tentang-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Section Keunggulan */
+
+.keunggulan {
+  padding: 50px 20px;
+  color: #085B45;
+}
+
+.keunggulan h2 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px; /* Memberi jarak ke bawah h2 */
+  line-height: 1.2;
+  text-align: center;
+}
+
+.keunggulan-list {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Memberi jarak antar kartu */
+  flex-wrap: wrap; /* Agar tetap rapi di layar kecil */
+}
+
+.item {
+  width: 320px; /* Sesuaikan dengan konsep */
+  height: 200px; /* Sesuaikan dengan konsep */
+  background-color: #f9f9f9; /* Warna latar (opsional) */
+  border-radius: 8px; /* Radius sudut (opsional) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px; /* Jarak dalam */
+  box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.2, 0.2); /* Bayangan (opsional) */
+}
+
+.keunggulan-list .item img {
+  width: 45px;
+  height: 45px;
+}
+
+.keunggulan-list .item h3 {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #085B45;
+  margin-bottom: 10px;
+}
+
+.keunggulan-list .item p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #085B45;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Panduan Request Barang */
+.panduan {
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 6rem;
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.panduan h2 {
+  margin-left: 0;
+  color: #085B45;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.panduan-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F3F3F3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.panduan-step {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panduan-step img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.panduan-step p {
+  color: #085B45;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.panduan-content img[src*="PanahKananIcon"] {
+  width: 30px; /* Sesuaikan ukuran panah */
+  height: auto;
+  margin: 0 15px; /* Tambahkan sedikit ruang antar elemen */
+}
+
+/* Footer.css */
+.footer {
+  background-color: #085B45;
+  padding: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+}
+
+.footer-mobile {
+  max-width: 1200px; /* Sesuaikan dengan layout */
+  margin: 0 auto;
+  text-align: center; /* Biar semua teks juga lebih rapi */
+}
+
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* Tambah jarak antar kolom */
+  flex-wrap: wrap;
+}
+
+.section h3 {
+  color: #b7b7b7;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.partner-logo {
+  width: 120px;
+}
+
+.google-play img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .hero {
+    height: 90vh; /* Reduce height for tablets */
+  }
+
+  .hero-content h1 {
+    font-size: 32px; /* Reduce font size */
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .google-play-btn {
+    height: 35px; /* Smaller button */
+  }
+
+  .tentang {
+    flex-direction: column;
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .tentang-header h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .tentang-header .tentang-subtitle {
+    font-size: 18px;
+  }
+
+  .tentang-content {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  .tentang-content p {
+    font-size: 15px;
+  }
+
+  .keunggulan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .keunggulan h2 {
+    margin-bottom: 20px;
+    flex: unset;
+    text-align: center;
+  }
+
+  .keunggulan-list {
+    justify-content: center;
+  }
+
+  .panduan {
+    padding: 2rem; /* Kurangi padding section */
+  }
+
+  .panduan h2 {
+    font-size: 28px; /* Kecilkan heading */
+  }
+
+  .panduan-content {
+    gap: 1rem; /* Kurangi jarak antar elemen */
+  }
+
+  .panduan-content img {
+    width: 50px; /* Kecilkan ukuran ikon */
+  }
+
+  .panduan-content-step p {
+    font-size: 14px; /* Kecilkan teks */
+  }
+
+  .footer-links {
+    gap: 100px;
+  }
+
+  .section h3 {
+    font-size: 16px;
+  }
+
+  .section ul li {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh; /* Further reduce height for smaller screens */
+  }
+
+  .hero-content {
+    top: 50%;
+    left: 5%;
+    max-width: 500px; /* Adjust content width */
+  }
+
+  .hero-content h1 {
+    font-size: 28px; /* Smaller headline */
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .google-play-btn {
+    height: 30px;
+  }
+
+  .tentang {
+    padding: 20px 30px;
+  }
+
+  .tentang-header h2 {
+    font-size: 24px;
+  }
+
+  .tentang-header .tentang-subtitle {
+    font-size: 16px;
+  }
+
+  .tentang-content p {
+    font-size: 14px;
+  }
+
+  .keunggulan h2 {
+    font-size: 24px;
+  }
+
+  .keunggulan-list .item {
+    width: 70%;
+  }
+
+  .panduan {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 2rem;
+  }
+
+  .panduan-content {
+    flex-direction: column; /* Atur langkah menjadi vertikal */
+    align-items: center; /* Selaraskan ke tengah */
+    gap: 2rem; /* Berikan jarak antar elemen */
+  }
+
+  .panduan-step img {
+    width: 60px; /* Ukuran ikon langkah */
+  }
+
+  .panduan-content img[src*="PanahKananIcon"] {
+    content: url('../Assets/Icon/Panah bawah.png'); /* Ganti ikon panah kanan menjadi panah bawah */
+    width: 10px; /* Ukuran ikon panah */
+    height: auto;
+    margin: 0; /* Hapus margin karena vertikal */
+  }
+
+  .panduan-step p {
+    font-size: 14px; /* Ukuran teks langkah */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Tambah jarak antar kolom */
+    flex-wrap: wrap;
+  }
+
+  .google-play img {
+    width: 130px;
+  }
+
+  .section ul li {
+    font-size: 12px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh; /* Compact height for mobile devices */
+  }
+
+  .hero-content {
+    top: 50%;
+    left: 5%;
+    max-width: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px; /* Smaller headline */
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .google-play-btn {
+    height: 25px;
+  }
+
+  .tentang {
+    padding: 20px;
+  }
+
+  .tentang-header h2 {
+    font-size: 20px;
+  }
+
+  .tentang-header .tentang-subtitle {
+    font-size: 14px;
+  }
+
+  .tentang-content p {
+    font-size: 12px;
+  }
+
+  .keunggulan {
+    padding: 30px 10px;
+  }
+
+  .keunggulan h2 {
+    font-size: 20px;
+  }
+
+  .keunggulan-list {
+    gap: 20px;
+  }
+
+  .keunggulan-list .item {
+    padding: 15px;
+  }
+
+  .keunggulan-list .item h3 {
+    font-size: 14px;
+  }
+
+  .keunggulan-list .item p {
+    font-size: 12px;
+  }
+
+  .panduan-content {
+    gap: 1.5rem; /* Kurangi jarak antar elemen */
+  }
+
+  .panduan-step img {
+    width: 50px; /* Ukuran ikon langkah lebih kecil */
+  }
+
+  .panduan-content img[src*="PanahKananIcon"] {
+    content: url('../Assets/Icon/Panah bawah.png'); /* Ikon panah tetap vertikal */
+    width: 16px; /* Ukuran panah lebih kecil */
+    height: auto;
+  }
+
+  .panduan-step p {
+    font-size: 12px; /* Ukuran teks lebih kecil */
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-links .section {
+    flex: 1 1 45%; /* Menjadikan "Perusahaan" dan "Sosial Media" sejajar */
+    max-width: 45%;
+  }
+
+  .footer-links .section:last-child {
+    flex: 1 1 100%; /* Menempatkan "Kerjasama" di bawah */
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .google-play img {
+    width: 120px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+}

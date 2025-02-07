@@ -1,0 +1,151 @@
+.signup-container-one{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.signup-image {
+  flex: 1;
+  background-image: url('../Assets/Pictures/Gambar_register_1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-form-container-one {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form-one {
+  width: fit-content;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-one h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.signup-input-one {
+  display: flex;  
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  align-items: flex-start; /* Menyusun ke sisi kiri */
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 14px;
+  color: #085B45;
+}
+
+.signup-input-one label {
+  font-size: 12px;
+  margin-bottom: 1px;
+}
+
+.signup-input-one input {
+  width: 100%; /* Menyesuaikan lebar dengan container */
+  height: 35px; /* Sama untuk semua input */
+  padding: 8px; /* Sesuaikan padding agar tidak terlalu kecil */
+  font-size: 12px; 
+  border: 1px solid #085B45; /* Warna garis */
+  border-radius: 6px; /* Biar smooth */
+  box-sizing: border-box; /* Biar padding tidak menambah lebar total */
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-file-label {
+  background-color: #c89900;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.signup-input-one p {
+  margin-top: 6px;
+  color: #28a745; /* Warna hijau untuk menunjukkan berhasil upload */
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.signup-input-one i {
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+.signup-button-one {
+  width: 50%; /* Membuat button mengisi seluruh lebar parent container */
+  padding: 4px; /* Memberi ruang dalam button */
+  font-size: 14px; /* Ukuran font yang pas */
+  font-family: 'Poppins', sans-serif; /* Menggunakan font yang sama */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Membuat sudut button membulat */
+  color: white; /* Warna teks putih */
+  cursor: pointer; /* Menandakan button bisa diklik */
+  margin-top: 10px;
+}
+
+.signup-ownfarm-logo {
+  display: flex;
+  justify-content: center; /* Posisikan ke kanan */
+  align-items: center; /* Pusatkan vertikal */
+  margin-top: 20px;
+}
+
+.signup-ownfarm-logo img {
+  width: 50px; /* Sesuaikan ukuran sedang */
+  height: auto; /* Menjaga rasio aspek */
+}
+
+@media (max-width: 1024px) {
+  .signup-container-one{
+    flex-direction: column;
+    height: 100vh;
+    padding: 40px 0;
+    background-image: url('../Assets/Pictures/Gambar_register_1.png'); /* Pakai gambar sebagai background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .signup-image {
+    display: none;
+  }
+
+  .signup-form-container-one {
+    flex: none;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .signup-form-one {
+    width: fit-content;
+    background-color: white;
+  }
+
+  .signup-button-one {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .signup-form-one {
+    margin-top: -50px;
+  }
+}

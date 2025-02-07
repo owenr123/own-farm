@@ -1,0 +1,207 @@
+.signup-container-two {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+  
+.signup-image {
+    flex: 1;
+    background-image: url('../Assets/Pictures/Gambar_register_1.png');
+    background-size: cover;
+    background-position: center;
+}
+  
+.signup-form-container-two {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.signup-form-two {
+    width: fit-content;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-two h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.signup-input-two {
+    display: flex;  
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: flex-start; /* Menyusun ke sisi kiri */
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 14px;
+    color: #085B45;
+  }
+  
+  .signup-input-two label {
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  
+  .signup-input-two input {
+    width: 100%; /* Menyesuaikan lebar dengan container */
+    height: 35px; /* Sama untuk semua input */
+    padding: 8px; /* Sesuaikan padding agar tidak terlalu kecil */
+    font-size: 12px; 
+    border: 1px solid #085B45; /* Warna garis */
+    border-radius: 6px; /* Biar smooth */
+    box-sizing: border-box; /* Biar padding tidak menambah lebar total */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .password-wrapper input {
+    width: 100%;
+    padding-right: 35px; /* Tambahkan padding-right agar tidak bertabrakan dengan ikon */
+    box-sizing: border-box; /* Supaya padding tidak mempengaruhi ukuran total */
+    height: 30px;
+}
+  
+  .password-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-30%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #085B45;
+  }
+
+  .menyetujui-ketentuan {
+    display: flex;
+    align-items: center; /* Menjaga checkbox dan label di satu garis */
+    gap: 5px; /* Memberikan jarak antara checkbox dan label */
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px; /* Ukuran teks kecil */
+    color: #085B45;
+  }
+  
+  .menyetujui-ketentuan input {
+    width: auto;
+    height: 10px;
+    position: relative; /* Gak perlu absolute, cukup relative supaya lebih dekat dengan label */
+    top: 0; /* Mengembalikan posisi checkbox ke atas */
+    margin: 0; /* Menghilangkan margin default dari input */
+    cursor: pointer; /* Mengganti pointer saat hover di atas checkbox */
+  }
+  
+  .menyetujui-ketentuan label {
+    font-size: 10px;
+    font-weight: 0;
+  }
+
+  .signup-button-two {
+    margin-top: 15px;
+    gap: 10px; /* Kasih jarak 10px antara tombol */
+    justify-content: center; /* Posisikan ke kanan */
+    align-items: center; /* Pusatkan vertikal */
+    display: flex;
+  }
+
+  .signup-button-two button {
+    width: 30%; /* Membuat button mengisi seluruh lebar parent container */
+    padding: 4px; /* Memberi ruang dalam button */
+    font-size: 14px; /* Ukuran font yang pas */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font yang sama */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Membuat sudut button membulat */
+    background-color: #c89900; /* Memberikan warna biru */
+    color: white; /* Warna teks putih */
+    cursor: pointer; /* Menandakan button bisa diklik */
+    margin-top: 10px;
+  }
+
+  .signup-ownfarm-logo {
+    display: flex;
+    justify-content: center; /* Posisikan ke kanan */
+    align-items: center; /* Pusatkan vertikal */
+    margin-top: 30px;
+  }
+  
+  .signup-ownfarm-logo img {
+    width: 50px; /* Sesuaikan ukuran sedang */
+    height: auto; /* Menjaga rasio aspek */
+  }
+
+  .signup-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Warna gelap transparan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .signup-modal-success {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .signup-container-two{
+      flex-direction: column;
+      height: 100vh;
+      padding: 40px 0;
+      background-image: url('../Assets/Pictures/Gambar_register_1.png'); /* Pakai gambar sebagai background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    .signup-image {
+      display: none;
+    }
+  
+    .signup-form-container-two {
+      flex: none;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+  
+    .signup-form-two {
+      width: fit-content;
+      background-color: white;
+    }
+  
+    .signup-button-two {
+        margin-top: 15px;
+        gap: 10px; /* Kasih jarak 10px antara tombol */
+        justify-content: center; /* Posisikan ke kanan */
+        align-items: center; /* Pusatkan vertikal */
+        display: flex;
+      }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .signup-form-two {
+      margin-top: -50px;
+    }
+  }

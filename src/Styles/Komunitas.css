@@ -1,0 +1,150 @@
+.komunitas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+  
+h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  color: #085B45;
+}
+  
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  overflow-y: auto;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+  
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  border-radius: 10px;
+  color: #333333;
+}
+
+.chat-message.user {
+  background-color: #a0e7a0;
+  align-self: flex-end;
+  text-align: right;
+  border-top-right-radius: 0;
+}
+
+.chat-message.other {
+  background-color: #d1f7d6;
+  align-self: flex-start;
+  text-align: left;
+  border-top-left-radius: 0;
+}
+  
+.no-message {
+  text-align: center;
+  color: #888888;
+  font-style: italic;
+}
+  
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+  
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+  
+.send-button {
+  background-color: #c89900;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* RESPONSIVE UNTUK 1024px */
+@media (max-width: 1024px) {
+  .chat-box {
+    max-width: 90%;
+    height: 350px;
+  }
+
+  .chat-message {
+    font-size: 14px;
+    max-width: 80%;
+  }
+
+  .chat-input-container {
+    max-width: 90%;
+  }
+
+  .chat-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .send-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* RESPONSIVE UNTUK 768px */
+@media (max-width: 768px) {
+  .komunitas-container {
+    padding: 15px;
+  }
+
+  .chat-box {
+    max-width: 95%;
+    height: 300px;
+    padding: 8px;
+  }
+
+  .chat-message {
+    font-size: 13px;
+    padding: 8px;
+    max-width: 85%;
+  }
+
+  .chat-input-container {
+    flex-direction: row; /* Pastikan tetap horizontal */
+    justify-content: flex-end; /* Posisikan ke kanan */
+  }
+
+  .chat-input {
+    flex: 1; /* Biar input tetap fleksibel */
+    max-width: 70%; /* Supaya tidak terlalu kecil */
+  }
+
+  .send-button {
+    width: auto; /* Jangan full width, biar pas di kanan */
+    padding: 8px 16px;
+  }
+}

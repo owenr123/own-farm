@@ -1,0 +1,187 @@
+.profile {
+padding: 0;
+}
+
+.profile h2 {
+  color: #085B45;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Tata letak profil */
+.profile-container {
+  display: flex;
+  justify-content: center; /* Tetap memastikan konten di tengah */
+  align-items: center; /* Pastikan sejajar vertikal */
+  gap: 50px; /* Jarak antara sidebar dan details */
+  min-height: 50vh;
+  padding-left: 25rem;
+}
+
+
+/* Sidebar */
+.profile-sidebar {
+  flex: 1;
+  max-width: 200px; /* Lebih kecil biar gak terlalu melebar */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gambar profil */
+.profile-picture-container {
+  position: relative; /* Parent harus relative */
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* Upload overlay */
+.profile-upload-overlay {
+  position: absolute;
+  width: 100%; /* Mengikuti parent */
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-camera-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.profile-upload-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.always-show {
+  opacity: 1 !important;
+}
+
+/* Email */
+.profile-email {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Detail Profil */
+.profile-details {
+  flex: 2; /* Detail lebih besar dari sidebar */
+  min-width: 400px; /* Lebih fleksibel */
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Tombol Edit */
+.profile-edit-button {
+  padding: 8px 20px;
+  font-size: 14px;
+  background-color: #c89900; /* Memberikan warna biru */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Form Edit */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 300px;
+}
+
+.profile-form label {
+  font-size: 16px;
+  color: #085B45;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #085B45;
+  border-radius: 5px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-save-button {
+  padding: 8px 20px;
+  font-size: 14px;
+  background-color: #c89900; /* Memberikan warna biru */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  max-width: 100px;
+}
+
+@media (max-width: 1024px) {
+  .profile-container {
+    padding-left: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Ubah jadi vertikal */
+    align-items: center; /* Pastikan tetap di tengah */
+    padding-left: 0; /* Hilangkan padding kiri */
+    gap: 20px; /* Kurangi jarak antar elemen */
+  }
+
+  .profile-sidebar {
+    max-width: 100%; /* Biarkan melebar penuh */
+  }
+
+  .profile-details {
+    min-width: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tambahkan ini supaya form & detail berada di tengah */
+    text-align: center; /* Pastikan teksnya juga rata tengah */
+  }
+
+  .profile-form label {
+    text-align: left;
+  }
+}

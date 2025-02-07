@@ -1,0 +1,266 @@
+.logistik {
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.logistik h2 {
+  color: #085B45;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.logistik-h2-break-line {
+  display: block; /* Memaksa teks menjadi baris baru */
+  margin-top: 5px; /* Atur jarak sesuai keinginan */
+}
+  
+.logistik-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.logistik-form {
+  display: flex; /* Membantu input menyesuaikan lebar */
+  flex-direction: column; /* Agar kontennya tetap vertikal */
+  width: 100%; /* Menyesuaikan lebar sesuai kebutuhan */
+  max-width: 500px; /* Atur batas maksimal agar tidak terlalu lebar */
+  border: 1px solid #cccccc;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Biar padding tidak menambah ukuran total */
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logistik-input {
+  width: 100%; /* Pastikan input-container juga full */
+  padding-top: 10px;
+  margin-bottom: 10px;
+  color: #085B45;
+}
+
+.logistik-input label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-input input {
+  width: 100%; /* Ubah dari 200% ke 100% agar mengikuti parent */
+  height: 35px;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #085B45;
+  border-radius: 6px;
+  box-sizing: border-box; /* Supaya padding tidak menambah lebar */
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-form h5 {
+  margin-top: 6px;
+  font-family: 'Poppins', sans-serif;
+  color: #085B45;
+  font-size: 14px; /* Ukuran teks kecil */
+}
+
+.logistik-checkbox-one {
+  display: flex;
+  justify-content: space-between; /* Membuat kedua elemen di ujung kiri dan kanan */
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px; /* Ukuran teks kecil */
+  margin-top: 10px;
+  color: #085B45;
+  margin-top: -10px !important;
+}
+
+.logistik-checkbox-two {
+  display: flex;
+  justify-content: space-between; /* Membuat kedua elemen di ujung kiri dan kanan */
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px; /* Ukuran teks kecil */
+  margin-top: 10px;
+  color: #085B45;
+  margin-top: 6px;
+}
+
+.logistik-input-quantity {
+  width: 30%; /* Pastikan input-container juga full */
+  padding-top: 14px !important;
+  margin-bottom: 10px;
+  color: #085B45;
+}
+
+.logistik-input-quantity label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-input-quantity input {
+  width: 100%; /* Ubah dari 200% ke 100% agar mengikuti parent */
+  height: 25px;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #085B45;
+  border-radius: 6px;
+  box-sizing: border-box; /* Supaya padding tidak menambah lebar */
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-input-reason {
+  width: 100%; /* Pastikan input-container juga full */
+  padding-top: 14px !important;
+  margin-bottom: 10px;
+  color: #085B45;
+}
+
+.logistik-input-reason label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-input-reason textarea {
+  width: 100%; /* Ubah dari 200% ke 100% agar mengikuti parent */
+  height: 80px;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #085B45;
+  border-radius: 6px;
+  box-sizing: border-box; /* Supaya padding tidak menambah lebar */
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-button {
+  margin-top: 15px;
+  gap: 10px; /* Kasih jarak 10px antara tombol */
+  justify-content: center; /* Posisikan ke kanan */
+  align-items: center; /* Pusatkan vertikal */
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.logistik-button button {
+  width: 30%; /* Membuat button mengisi seluruh lebar parent container */
+  padding: 4px; /* Memberi ruang dalam button */
+  font-size: 14px; /* Ukuran font yang pas */
+  font-family: 'Poppins', sans-serif; /* Menggunakan font yang sama */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Membuat sudut button membulat */
+  background-color: #c89900; /* Memberikan warna biru */
+  color: white; /* Warna teks putih */
+  cursor: pointer; /* Menandakan button bisa diklik */
+  margin-top: 10px;
+}
+
+.logistik-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna gelap transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.logistik-modal-buttons {
+  display: flex;
+  justify-content: center; /* Posisikan tombol di tengah */
+  gap: 10px; /* Beri jarak antar tombol */
+  margin-top: 15px;
+}
+
+.logistik-modal-buttons button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px; /* Membuat sudut button membulat */
+  background-color: #c89900; /* Memberikan warna emas */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.logistik-modal-confirm,
+.logistik-modal-success {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logistik-modal-success button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px; /* Membuat sudut button membulat */
+  background-color: #c89900; /* Memberikan warna biru */
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .logistik {
+    height: 100vh;
+  }
+
+  .logistik h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+  }
+
+  .logistik-form-container {
+    flex: none;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logistik {
+    height: auto;
+  }
+
+  .logistik-checkbox-one, 
+  .logistik-checkbox-two {
+    display: flex;
+    flex-wrap: nowrap; /* Pastikan tidak turun ke bawah */
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Pastikan checkbox mengisi seluruh lebar */
+    gap: 10px; /* Jarak antar elemen */
+  }
+
+  .logistik-checkbox-one label,
+  .logistik-checkbox-two label {
+    white-space: nowrap; /* Supaya teks tidak turun */
+    font-size: 12px; /* Sedikit perkecil ukuran */
+  }
+
+  .logistik-checkbox-one input,
+  .logistik-checkbox-two input {
+    margin-right: 5px; /* Jarak antara checkbox dan teks */
+  }
+
+  .logistik-input-quantity {
+    width: 60%; /* Pastikan input-container juga full */
+  }
+}
+
+  

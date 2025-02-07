@@ -1,0 +1,117 @@
+/* Navbar umum */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #085B45;
+  height: 64px;
+}
+
+.navbar-logo img {
+  height: 36px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.navbar-links li {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-logout {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Warna untuk navbar link aktif */
+.active-link {
+  color: #c89900 !important;
+  font-weight: bold;
+}
+
+.logout-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna gelap transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.logout-modal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* 🔥 Efek slide-down */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 0; /* Geser ke kanan agar sejajar dengan hamburger */
+    width: auto; /* Hindari ruang kosong berlebih */
+    background-color: #085B45;
+    padding: 8px 16px;
+    z-index: 99;
+    gap: 12px;
+    overflow: hidden;
+    max-height: 0; /* Mulai dari 0 biar tidak terlihat */
+    transition: max-height 0.4s ease-in-out; /* Animasi slide-down */
+  }
+
+  .navbar-links.active {
+    max-height: 300px; /* Biar menu muncul dengan efek slide-down */
+  }
+
+  .navbar-links li {
+    font-size: 16px;
+    padding: 8px 12px;
+    text-align: right;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+}

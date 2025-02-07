@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Jarak horizontal lebih besar */
+  background-color: #085B45;
+  height: 64px; /* Tinggi navbar agar pas dengan desain */
+}
+
+.navbar-logo img {
+  height: 36px; /* Menyesuaikan tinggi logo */
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 24px; /* Jarak antar tombol lebih besar */
+}
+
+.btn-login,
+.btn-signup {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px; /* Sesuai dengan Figma */
+  font-family: 'Poppins', sans-serif; /* Sesuai dengan Figma */
+  font-weight: 500; /* Medium weight sesuai desain */
+  cursor: pointer;
+  word-wrap: break-word; /* Agar teks tetap rapi */
+  text-decoration: none; /* Hilangkan underline */
+}
+
+.btn-login:focus,
+.btn-signup:focus {
+  outline: none; /* Hilangkan border default saat fokus */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 16px; /* Padding lebih kecil */
+  }
+
+  .navbar-logo img {
+    height: 34px; /* Logo lebih kecil */
+  }
+
+  .navbar-actions {
+    gap: 12px; /* Jarak antar tombol lebih kecil */
+  }
+
+  .btn-login,
+  .btn-signup {
+    font-size: 14px; /* Ukuran teks tombol lebih kecil */
+    padding: 4px 8px; /* Tombol lebih kecil */
+  }
+}
+
